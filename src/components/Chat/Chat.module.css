@@ -1,0 +1,87 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  background: #313131;
+  padding: 17px;
+  max-width: 640px;
+  @media screen and (max-width: 690px) {
+    padding: 7px;
+  }
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.message {
+  background: #737373;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+.messageX {
+  background: #00ae1c;
+  margin-right: 0px;
+  margin-left: auto;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.text,
+.time {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.currentTime {
+  text-align: right;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.inputContainer input[type="text"] {
+  padding-right: 20px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  background: #424242;
+  color: #ffffff;
+  opacity: 0.7;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #8b8b8b;
+  border-radius: 3px;
+  @media screen and (max-width: 690px) {
+    height: 30px;
+  }
+}
+
+.arrowImg {
+  position: absolute;
+  top: 45%;
+  right: 5px;
+  transform: translateY(-80%);
+  background-image: url(@/icons/arrow.svg);
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+  @media screen and (max-width: 690px) {
+    top: 40%;
+    right: 0px;
+  }
+}

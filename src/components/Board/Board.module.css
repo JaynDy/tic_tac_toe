@@ -1,0 +1,101 @@
+.containerGameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-family: Inter;
+  font-size: calc(2.5vw);
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ef9919;
+  margin: 20px 0;
+}
+
+.gameBoard {
+  width: 45%;
+  background: #313131;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  @media screen and (max-width: 690px) {
+    width: 100%;
+  }
+}
+
+.hrLine {
+  width: 95%;
+  height: 1.5px;
+  background: #545353;
+  position: absolute;
+  margin: 0 6px;
+}
+
+.vrLine {
+  width: 1.5px;
+  height: 95%;
+  background: #545353;
+  position: absolute;
+  margin: 6px 0;
+}
+
+.hrLine:nth-child(1) {
+  top: calc(33.33% - 0.15px);
+}
+
+.hrLine:nth-child(2) {
+  top: calc(66.67% - 0.75px);
+}
+
+.vrLine:nth-child(3) {
+  left: calc(33.33% - 0.75px);
+}
+
+.vrLine:nth-child(4) {
+  left: calc(66.67% - 0.75px);
+}
+
+.winningLine {
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.horizontal {
+  left: 10px;
+  width: 92%;
+  height: 6px;
+}
+
+.vertical {
+  top: 10px;
+  width: 6px;
+  height: 92%;
+}
+
+.diagonalLeft {
+  left: 0px;
+  width: 100%;
+  height: 6px;
+  transform: rotate(45deg);
+}
+
+.diagonalRight {
+  top: 0px;
+  width: 6px;
+  height: 100%;
+  transform: rotate(45deg);
+}
+
+.winner {
+  color: #00ae1c;
+}
+
+.loser {
+  color: #ff5620;
+}

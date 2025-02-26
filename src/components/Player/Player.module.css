@@ -1,0 +1,41 @@
+.player {
+  margin-top: 25px;
+  height: 50px;
+  background: #222222;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  max-width: 675px;
+}
+.playerOImg {
+  background-image: url(@/icons/playerO.svg);
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+}
+
+.playerXImg {
+  background-image: url(@/icons/playerX.svg);
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+}
+
+h4 {
+  font-family: Inter;
+  font-size: clamp(13px, 1.5vw, 30px);
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.containerPlayers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
